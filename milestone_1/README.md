@@ -1,26 +1,8 @@
 Milestone 1
-===========
 
-Folders
--------
+We got our wine data from UCI (details in the main database README), combined the red and white databases into one, and then used Python scikit learn to run a linear regression algorithm on the data with 10-fold cross validation.
+We also performed a CART decision tree algorithm on the data (also with 10-fold CV)
 
-Each milestone folder should include the following
+Difficulties: Deciding whether the output variable (the score, 1-10 that the wine received) should be treated as categorical or linear. We tried both, and for now we think we are using it as a linear variable.
 
-* All code you wrote/used
-* A README file
-
-They should not include
-
-* Datasets
-* Large packages
-
-README
-------
-
-The README file should include
-
-* Description of what your team did
-* Methods used to accomplish each part
-* Potential difficulties faced
-* Resources used
-* Description of how to run the code in the folder
+To run the code, make sure that the wine dataset is in the same folder as your code, and run the Python script.
