@@ -1,12 +1,11 @@
 Dataset
 =======
 
-.gitignore
-----------
+We used a database of different red and white wines (over 6000 total), the features and characteristics of the wines, and the overall quality scores they received
 
-It is good practice to not upload datasets to your repositories both because they are often large but also because datasets have certain intellectual property associated with them and you should give proper credit to the source where you got the dataset (unless you have made your own dataset).
 
 Source
 ------
 
-In a README describe where you got the dataset as well as where to download the files needed and how you set up the folders in the Dataset folder so the TAs can easily run your code if needed.
+http://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/
+We combined the white and red data into a single dataset, and added another column for type (red or white)
