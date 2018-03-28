@@ -33,8 +33,11 @@ dpClf = GP.GaussianProcessClassifier(kernel=dpobj)
 #reg.fit(X,Y)
 
 rbfRegScore = cross_val_score(rbfReg,X,Y,cv=10,n_jobs=2).mean()
+print(rbfRegScore)
 rbfClfScore = cross_val_score(rbfClf,X,Y,cv=10,n_jobs=2).mean()
+print(rbfClfScore)
 
 dpRegScore = cross_val_score(dpReg,X,Y,cv=10,n_jobs=2).mean()
+print(dpRegScore)
 dpClfScore = cross_val_score(dpClf,X,Y,cv=10,n_jobs=2).mean()
-
+print(doClfScore)
