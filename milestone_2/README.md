@@ -1,26 +1,11 @@
 Milestone 2
 ===========
 
-Folders
--------
+For this milestone, we used Gaussian Processes on two different kernels -- RBF and DP (dot product) -- and examined both regression and classification for each. We tested these regressions on data sets on different sizes -- 1%, 5%, 10%, and 100% of the dataset.
+We ran 10-fold cross validation on all of them, using mean-squared error for regressions and accuracy for classifications.
 
-Each milestone folder should include the following
+Difficulties: The DP tests did not finish, as they took too much time. We will look into that issue in the future 
 
-* All code you wrote/used
-* A README file
+Resources: Python and scikit-learn
 
-They should not include
-
-* Datasets
-* Large packages
-
-README
-------
-
-The README file should include
-
-* Description of what your team did
-* Methods used to accomplish each part
-* Potential difficulties faced
-* Resources used
-* Description of how to run the code in the folder
+To run the code: Self explanatory, run regressions / classifications using Python.
