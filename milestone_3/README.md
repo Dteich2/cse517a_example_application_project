@@ -13,4 +13,6 @@ Difficulties: An initial bug in our eigenvalue plots lead us astray until we fix
 
 Resources: KernelPCA in scikit-learn (python)
 
-To run the code: Execute WineDimRed.py as a python script.
+To run the code: Execute WineDimRed.py as a python script. This script will, by default, run Linear PCA on all features to obtain and plot the eigenvalues. It will then run PCA again for 3-feature dimension reduction to plot the data in 3-D. Then it will run 1-feature dimension reduction for Linear PCA. Finally, it will run Constant Kernal GP and Ridge Regression to display cross-validation scores for the 1-dimension reduction. This last step may take awhile.
+
+To run RBF rather than linear, the 'linear' should be changed to 'rbf' in the KernelPCA learner. To run on more than 1 feature, the n_components value should be changed to the number of retained features desired.
