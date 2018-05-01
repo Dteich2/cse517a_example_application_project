@@ -1,0 +1,28 @@
+——
+Linear
+——
+1-Feature Retained
+GP Constant Kernel Regression CV Score: -1.0645282161618028
+Linear Regression CV Score: -0.9391105140054506
+
+3-Feature Retained
+GP Constant Kernel Regression CV Score: -1.0645282161618028
+Linear Regression CV Score: -0.9391105140336883
+
+6-Feature Retained
+GP Constant Kernel Regression CV Score: -1.0645282161618028
+Linear Regression CV Score: -0.9391105139711844
+——
+RBF
+——
+1-Feature Retained
+GP Constant Kernel Regression CV Score: -1.0645282161618028
+Linear Regression CV Score: -0.9229594459899895
+
+3-Features Retained
+GP Constant Kernel Regression CV Score: -1.0645282161618028
+Linear Regression CV Score: -0.9231681635580828
+
+6-Features Retained
+GP Constant Kernel Regression CV Score: -1.0645282161618028
+Linear Regression CV Score: -0.9223483463231676
