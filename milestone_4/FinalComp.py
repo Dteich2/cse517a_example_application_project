@@ -39,9 +39,21 @@ for i in range(NUM_RUNS):
 	crosses.append(KFold(n_splits=NUM_FOLDS, shuffle=True, random_state=i))
 
 for model in models:
-	print("Working on one model")
 	for cross in crosses:
 		scores[model] += cross_val_score(model,X,Y,cv=cross,n_jobs=2,scoring='neg_mean_squared_error').tolist()
+
+means = {model : numpy.mean(scores[model]) for model in models}
+pairs = [(ridgeReg,clf),(ridgeReg,NN),(clf,NN)]
+
+for A,B in pairs:
+	dbar = means[A] - means[B]
+	sigmad = (sum((scores[A][i] - scores[B][i] - dbar)**2 for i in range(NUM_FOLDS * NUM_RUNS)) / ((NUM_FOLDS * NUM_RUNS) - 1))**0.5
+	tval = dbar / (sigmad / ((NUM_FOLDS * NUM_RUNS)**0.5))
+
+	print("THIS IS ONE")
+	print(dbar)
+	print(sigmad)
+	print(tval)
 
 fig, axs = plt.subplots(1, 3, sharey=True, tight_layout=True)
 
